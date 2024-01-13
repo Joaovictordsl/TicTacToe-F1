@@ -30,7 +30,9 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 180, height: 180)
                     
-                    Text("27°")
+                    Text("How it's your day going?")
+                        .font(.system(size: 25, weight: .medium, design: .monospaced))
+                        .foregroundStyle(.white)
                         
                 }
                 Spacer()
