@@ -11,23 +11,22 @@ struct ContentView: View {
     
     
     var body: some View {
-        
-        VStack{
-            Image("cabecadosharl")
-            Text("Hello World")
-                .font(.system(size: 29, weight: .medium, design: .monospaced))
-            Circle()
-                .stroke(lineWidth: 10)
-                .frame(width: 100, height: 100, alignment: .top)
-            Rectangle()
-                .stroke(lineWidth: 20)
-                .frame(width: 100, height: 100, alignment: .bottom)
-                .cornerRadius(20)
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [Color.black, Color.green]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
                 
-            Capsule()
-                .fill(.cyan)
-                .frame(width: 100, height: 50)
+            VStack{
+                Image(systemName: "heart.fill")
+                    .renderingMode(.template)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(.green)
+                    
+            }
         }
+        
+        
         
 //        ZStack{
 //            LinearGradient(gradient: Gradient(colors: [.blue, .white]),
