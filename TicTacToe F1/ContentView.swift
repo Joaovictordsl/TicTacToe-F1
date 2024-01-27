@@ -33,12 +33,11 @@ struct ContentView: View {
                         Text("@charles_leclerc")
                             .foregroundColor(.white)
                             .font(.subheadline)
-
                     }
                 }
                 
                 Divider()
-                
+                Spacer()
                 HStack {
                     Image("cabecadovespa")
                         .resizable()
@@ -56,8 +55,6 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.subheadline)
                     }
-                    
-                    
                 }
                 
             }
