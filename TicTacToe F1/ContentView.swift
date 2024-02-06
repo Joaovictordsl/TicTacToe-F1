@@ -63,6 +63,9 @@ struct ContentView: View {
                 }
                 
                 Spacer()
+                
+                Image(systemName: "paperplane.circle.fill")
+                    .foregroundColor(.blue)
             }
             .padding()
             
