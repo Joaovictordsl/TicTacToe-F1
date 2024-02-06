@@ -22,7 +22,7 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .clipShape(Circle())
-                        .frame(width: 100, height: 100, alignment: .leading)
+                        .frame(width: 80, height: 80, alignment: .leading)
                     
                     VStack (alignment: .leading) {
                         Text("Sharl")
@@ -34,16 +34,21 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.subheadline)
                     }
+                    
+                    Spacer()
+                    
+                    Image(systemName: "paperplane.circle.fill")
+                        .foregroundColor(.blue)
                 }
                 
                 Divider()
-                Spacer()
+                
                 HStack {
                     Image("cabecadovespa")
                         .resizable()
                         .scaledToFit()
                         .clipShape(Circle())
-                        .frame(width: 100, height: 100, alignment: .leading)
+                        .frame(width: 80, height: 80, alignment: .leading)
                     
                     VStack (alignment: .leading) {
                         Text("Vespa")
@@ -57,8 +62,10 @@ struct ContentView: View {
                     }
                 }
                 
+                Spacer()
             }
-            .padding(4)
+            .padding()
+            
         }
         
         
