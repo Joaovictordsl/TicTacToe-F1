@@ -60,12 +60,14 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.subheadline)
                     }
+                    
+                    Image(systemName: "paperplane.circle.fill")
+                        .foregroundColor(.blue)
                 }
                 
                 Spacer()
                 
-                Image(systemName: "paperplane.circle.fill")
-                    .foregroundColor(.blue)
+                
             }
             .padding()
             
