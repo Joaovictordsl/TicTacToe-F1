@@ -29,7 +29,6 @@ struct TicTacToeView: View {
                             .cornerRadius(20)
                 }
             }
-            
         }
     }
 }
