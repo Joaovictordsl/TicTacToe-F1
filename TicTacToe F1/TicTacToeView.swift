@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct TicTacToeView: View {
+    
+    let columns: [GridItem] = [
+        .init(),
+        .init(),
+        .init()]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            LinearGradient(colors: [.red, .black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+        
+            LazyVGrid(columns: columns, spacing: 40) {
+                
+                ForEach(0...8, id: \.self) { item in
+                    
+                        Rectangle()
+                            .frame(width: 100, height: 100)
+                            .cornerRadius(20)
+                }
+            }
+            
+        }
     }
 }
 
