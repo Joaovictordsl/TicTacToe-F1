@@ -20,18 +20,18 @@ struct TicTacToeView: View {
             LinearGradient(colors: [.red, .black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
         
-            Button {
-                
-            } label: {
-                
-            }
+            
             LazyVGrid(columns: columns, spacing: 40) {
                 
                 ForEach(0...8, id: \.self) { item in
-                    
+                    Button {
+                        
+                    } label: {
                         Rectangle()
                             .frame(width: 100, height: 100)
                             .cornerRadius(20)
+                    }
+                        
                 }
             }
         }
