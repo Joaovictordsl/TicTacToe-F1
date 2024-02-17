@@ -20,20 +20,49 @@ struct TicTacToeView: View {
             LinearGradient(colors: [.red, .black, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
         
-            
-            LazyVGrid(columns: columns, spacing: 40) {
-                
-                ForEach(0...8, id: \.self) { item in
-                    Button {
+            VStack {
+                HStack {
+                  Image("cabecadosharl")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .frame(width: 200, height: 200)
                         
-                    } label: {
-                        Rectangle()
-                            .frame(width: 100, height: 100)
-                            .cornerRadius(20)
-                    }
-                        
+                    
+                  Image("cabecadovespa")
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .frame(width: 200, height: 200)
+                    
+                    
                 }
+                HStack {
+                    LazyVGrid(columns: columns, spacing: 25) {
+                        
+                        ForEach(0...8, id: \.self) { item in
+                            Button {
+                                
+                            } label: {
+                                Rectangle()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(20)
+                            }
+                                
+                        }
+                    }
+                }
+                    
             }
+            
+            
+            
+            
+            
+                
+            
+            
+            
         }
     }
 }
